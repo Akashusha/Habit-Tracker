@@ -1,0 +1,231 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height viewport */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Form Container */
+.habit-form-container {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Habit List */
+.habit-list-container {
+  margin-top: 20px;
+}
+
+.habit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(17, 10, 10);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.habit-info {
+  flex: 1;
+}
+
+.habit-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: rgb(26, 81, 135);
+}
+
+/* Buttons for Actions */
+.habit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* AI Suggestions Section */
+.suggestions-container {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.suggestions-container h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.suggestion-item {
+  background-color: #f1f5f9;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.suggestion-item p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+/* Container styles */
+.habit-suggestions-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+.habit-suggestions-heading {
+  color: #333;
+}
+
+/* Button styles */
+.habit-suggestions-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.habit-suggestions-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styles */
+.habit-suggestions-error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Suggestions list styles */
+.habit-suggestions-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual suggestion styles */
+.habit-suggestions-list-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.habit-suggestions-list-item p {
+  color: #333;
+  margin: 0;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
