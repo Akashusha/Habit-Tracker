@@ -97,6 +97,8 @@ Copy code
 Response
 201: User registered successfully.
 500: Error registering user.
+
+
 2. User Login
 POST /api/login
 
@@ -118,6 +120,7 @@ Copy code
 }
 404: User not found.
 403: Invalid credentials.
+
 3. Get Habits
 GET /api/habits
 
@@ -139,6 +142,7 @@ Copy code
   }
 ]
 500: Error fetching habits.
+
 4. Create Habit
 POST /api/habits
 
@@ -157,6 +161,8 @@ Copy code
 Response
 201: Habit created successfully.
 500: Error creating habit.
+
+
 5. Update Habit
 PUT /api/habits/:id
 
@@ -173,6 +179,8 @@ Copy code
 Response
 200: Habit updated successfully.
 500: Error updating habit.
+
+
 6. Delete Habit
 DELETE /api/habits/:id
 
@@ -183,6 +191,8 @@ Authorization: Bearer <token>
 Response
 200: Habit deleted successfully.
 500: Error deleting habit.
+
+
 7. Get AI Suggestions
 GET /api/ai-suggestions
 
